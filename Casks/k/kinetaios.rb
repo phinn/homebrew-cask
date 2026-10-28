@@ -8,7 +8,7 @@ cask "kinetaios" do
   url "https://github.com/phinn/KinetAios/releases/download/v#{version}/KinetAios-#{version}-#{arch}.dmg",
       verified: "github.com/phinn/KinetAios/"
   name "KinetAios"
-  desc "Local-first multi-engine AI agent dashboard for Windows and macOS"
+  desc "Local-first multi-engine AI agent dashboard"
   homepage "https://phinn.github.io/KinetAios/"
 
   livecheck do
@@ -16,7 +16,7 @@ cask "kinetaios" do
     strategy :github_latest
   end
 
-  depends_on macos: ">= :catalina"
+  depends_on macos: :catalina
 
   app "KinetAios.app"
 
